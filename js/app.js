@@ -22,11 +22,9 @@ $(document).ready(function(){
             }
         });
     }
+
     readNasaWelcome();
 
-        // <ul>
-        //     <li><img src=link[i]></li>
-        // </ul>
 
     function readNasaGallery() {
         var urlNasa = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=V9gWebdHpzxi0cpx5xQqMM8LbHRzIN1jGBqIw7wY";
@@ -40,7 +38,7 @@ $(document).ready(function(){
                 function loadImages() {
                     for (var i = n; i < n + 6; i++) {
                         var li = $('<li>');
-                        var img = $('<img src=' + marsImg[i].img_src + '></img>');
+                        var img = $('<a href=' + marsImg[i].img_src + '><img src=' + marsImg[i].img_src + '></img></a>');
                         gallery.append(li);
                         li.append(img);
                     }

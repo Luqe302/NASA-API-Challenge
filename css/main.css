@@ -111,6 +111,11 @@ h1 {
     .gallery li {
         width: calc(100% / 2);
     }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
 }
 
 

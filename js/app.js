@@ -44,7 +44,6 @@ $(document).ready(function(){
                 function loadImages() {
                     for (var i = n; i < n + 6; i++) {
                         var li = $('<li>');
-                        // var img = $('<img src=' + marsImg[i].img_src + '>');
                         var img = $('<img>', {
                             src: marsImg[i].img_src,
                         })
@@ -57,7 +56,7 @@ $(document).ready(function(){
                         showPopUp(this.src);
                     })
                 }
-                
+
                 loadImages();
 
                 button.on('click', function() {
